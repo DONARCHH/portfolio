@@ -1,0 +1,399 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden;
+}
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeInUp 1s ease-out;
+}
+.project img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Responsive */
+    max-width: 500px; /* Set max width */
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.5);
+    color: white;
+    position: relative;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+
+/* Scale-in animation */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Close button */
+.close {
+    color: #ffcc00;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+/* Image inside modal */
+.modal-content img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* About Section */
+.about {
+    margin-bottom: 50px;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Projects Section */
+.projects {
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.projects h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards 0.5s;
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #777;
+    font-size: 16px;
+}
+/* Skills & Experience Styling */
+.skills-container, .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-card, .job-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.5);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover, .job-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card h3, .job-card h3 {
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+.skill-card p, .job-card p {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.skill-card i, .job-card i {
+    font-size: 30px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.contact h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #03172e;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s;
+    transform: scale(1);
+    animation: bounceIn 1s ease-out forwards;
+}
+
+.icon i {
+    font-size: 20px;
+    color: white;
+}
+
+.icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); opacity: 0; }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .profile {
+        width: 80%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* About, Education, and Interests Sections */
+#about, #education, #interests {
+    background: #1a1a1a;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.3);
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Section Titles */
+#about h2, #education h2, #interests h2 {
+    font-size: 26px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+#about p, #education p, #interests p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Certifications List */
+.certifications {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.certifications li {
+    font-size: 16px;
+    color: #ffcc00;
+    background-color: rgba(255, 204, 0, 0.1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Download Button */
+.btn-download {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn-download button {
+    background: linear-gradient(135deg, #ffcc00, #e6b800);
+    color: #111;
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.btn-download button:hover {
+    background: linear-gradient(135deg, #e6b800, #cc9900);
+    transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #about, #education, #interests {
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    #about p, #education p, #interests p {
+        font-size: 14px;
+    }
+
+    .certifications li {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .btn-download button {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+}
